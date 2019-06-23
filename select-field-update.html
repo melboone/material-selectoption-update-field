@@ -1,16 +1,12 @@
 
-    <!-- COULT INCORPORATE IN CSS .form-error{color: #D8000C;} to render form error
+    <!-- COULD INCORPORATE IN CSS .form-error{color: #D8000C;} to render form error
     Based on https://codepen.io/louking/pen/qrjKxB -->
-    <form>
         <div class="row">
             <div class="input-field col s12 m6">
-
                 <select id="options" name="optionsname" required class="validate" onchange="changeOption()">
-
                     <option value="" required disabled selected>Choose option</option>
                     <option value="opt1">option 1</option>
                     <option value="opt2">option 2</option>
-                    <option value="opt3">option 3</option>
                 </select>
                 <label>Select Options</label>
             </div>
@@ -26,19 +22,6 @@
                 <p>Option 2 was chosen</p>
             </div>
         </div>
-
-        <div id=opt3 class="all-options" style='display:none'>
-            <div class="row">
-                <p>Option 3 was chosen</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="input-field col s6">
-                <button class="waves-effect waves-light btn submit-btn" type="submit">Submit</button>
-            </div>
-        </div>
-    </form>
 
     <script>
         $(document).ready(function () {
